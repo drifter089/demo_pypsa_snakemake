@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Snakemake",
+      "type": "python",
+      // "python.pythonPath": "/home/akshat/anaconda3/envs/demo_snakemake/bin/python",
+      // "request": "attach",
+      "request": "launch",
+      // "connect": {
+      //   "host": "localhost",
+      //   "port": 8028
+      // },
+      // "program": "/home/akshat/anaconda3/envs/demo_snakemake/bin/snakemake",
+      "module": "snakemake",
+      "args": ["--cores", "1", "calculate_sum", "--debug"],
+      "console": "integratedTerminal",
+      "stopOnEntry": true,
+      "justMyCode": false
+    }
+  ]
+}
